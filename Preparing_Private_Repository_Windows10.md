@@ -1,17 +1,21 @@
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
 # Preparing private repository
 
-After building a plugin you need to upload this plugin to your own Python private repository. This guide shows how to install private repository and configuration at Supervisor.
+After building a plugin you must upload the plugin to your private (test) repository for test with STU and PAM. You can then ask ARGOS LABS to publish it to the entire ARGOS Low-code community or to publish it to a designated repository for their private usage.
 
-## Install Private repository using pypicloud
+This section will guild you to set up your Python private repository. After setting it up you can coonfigure it at Supervisor so that your STU will see you plugin there fow showing at his toolbox.
 
-We are using normal Python Repository. Previously we recommend [pypiserver](https://pypi.org/project/pypiserver/) for this repository but now instead we recommend [pypiserver](https://pypicloud.readthedocs.io/en/latest/topics/getting_started.html#installation) for the following advantages:
+## Installation of private repository using pypicloud
+
+We are using normal Python repository scheme. We will simply use [pypicloud](https://pypicloud.readthedocs.io/en/latest/topics/getting_started.html#installation) for the following advantages:
 
 * Web based user interface to manage plugins and users
 * Simple local installation
 
-### Make a new `pypi` Virtual Environment
+### Making a new `pypi` Virtual Environment
 
-You need to make a new VENV(Virtual Environment) to run pypicloud local python repository.
+You need to make a new VENV(Virtual Environment) to run pypicloud, your local Python repository.
 > You can change any VENV name instead `pypi`
 
 ```sh
@@ -56,17 +60,17 @@ Package    Version
 pip        22.0.4
 setuptools 40.8.0
 ```
-> versions may be different with above examples.
+> versions may be different from the examples above.
 
-### Install pypicloud
+### Installing pypicloud
 
-Just one command is enough.
+Just one command is required.
 
 ```
 pip install pypicloud[server]
 ```
 
-Next is real example.
+Below shows the actual example.
 ```sh
 (pypi) C:\work>pip install pypicloud[server]
 Collecting pypicloud[server]
@@ -187,7 +191,7 @@ Successfully installed PasteDeploy-2.1.1 SQLAlchemy-1.4.32 beaker-1.11.0 boto3-1
 ```
 
 ### Configuration 
-Although `pypicloud` is designed to work with AWS S3, GCS AZure and so on let's configure with local file.
+Although `pypicloud` is designed to work with AWS S3, GCS, AZure, and so on, for our example, let's configure it to work at the local environment.
 
 ```sh
 (pypi) C:\work>pypicloud-make-config -t server.ini
@@ -215,6 +219,7 @@ Config file written to 'server.ini'
                1 File(s)          1,421 bytes
                4 Dir(s)   9,418,104,832 bytes free
 ```
+
 We are using `[3] filesystem`. 
 After selecting store type you entered `admin` user id and password, keep in mind that later you can manage this site at web browser.
 
@@ -301,7 +306,7 @@ format = %(levelname)s %(asctime)s [%(name)s] %(message)s
 
 > Default port number is `6543`. You can change any port you want less than 65535.
 
-## Running Private repository using pypicloud
+## Running the private repository using pypicloud
 
 
 ```sh
@@ -312,7 +317,7 @@ Starting server in PID 804.
 INFO 2022-03-20 19:00:44,625 [waitress] Serving on http://0.0.0.0:6543
 ```
 
-## Web Interface
+## The Web interface
 
 ![01-pypiserver](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/01-pypiserver.png)
 
@@ -325,13 +330,13 @@ You can login with the `user id` and `password` which are created at Configurati
 ![03-pypiserver-admin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/03-pypiserver-admin.png)
 
 At `Admin` top menu you can manage Users and Groups.
-Once logined with `admin` user you can easily upload or delete module.
+Once logined with `admin` user you can easily upload or delete modules.
 
-> Refer this [manual](https://pypicloud.readthedocs.io/en/latest/index.html) for more detailed use.
+> Refer to this link [manual](https://pypicloud.readthedocs.io/en/latest/index.html) for more detailed use.
 
-## Supervisor Setting to use private repository
+## Setting your Supervisor account to activate the private repository with your STU and PAM
 
-You can register your private repository at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin).
+You can register your private repository at [Supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin).
 
 ![04-supervisor-add-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/04-supervisor-add-private-plugin.png)
 
@@ -347,5 +352,6 @@ Click the `Save` button.
 
 ![05-supervisor-first-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/05-supervisor-first-private-plugin.png)
 
-> If you already have one or more private repositories then re-order to first position. This is because when plugin is being built it tries to upload to the ***FIRST private repository***.
+> **IMPORTANT** If you already have one or more private repositories then re-order your new private repository to the first position. (move it up to the top of the list) This is because the POT SDK has been designed to upload the new plugin to the ***FIRST private repository*** on the list.
 
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)

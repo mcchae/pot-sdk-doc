@@ -1,6 +1,8 @@
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
 # Install ARGOS POT SDK
 
-Run next command in the virtual environment with this command:
+Run below command in the Virtual Environment:
 
 > pip install -U alabs.ppm alabs.icon --index https://pypi-official.argos-labs.com/pypi
 
@@ -114,3 +116,5 @@ wheel               0.37.0
 | [alabs.ppm](https://pypi-official.argos-labs.com/#/package/alabs-ppm) | 4.115.1700 | POT utility | POT main utility |
 
 > Above versions are for now, date 21 March, 2022
+
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)

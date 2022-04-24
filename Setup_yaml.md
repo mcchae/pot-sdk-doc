@@ -1,4 +1,8 @@
-# Tags and Version
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
+# Tags and Versions
+
+Tags are not only helpful for users to search and locate your plugin in the STU's toolbox. Versions must be managed by you so that the user can select the right version for their automation projectss. The Operating System specifications are important as the users can know whether or not your plugin is portable between multiple OS's like Windows and Linux.
 
 ![01-setup-yaml](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/07-setup_yaml/01-setup-yaml.png)
 
@@ -66,3 +70,4 @@ Each iterms explained as follows:
 > 
 > *Sometimes import statements can be changed automatically by refectoring functionality at main.py or test_me.py but sometimes not. So before building all be sure to checking above three references.*
 
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)

@@ -1,3 +1,5 @@
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
 # Help document with README.md
 
 `.md` file extension is for [MarkDown](https://www.markdownguide.org/) document.
@@ -81,3 +83,5 @@ Next is the example [README.md](https://github.com/Jerry-Chae/plugins/blob/main/
 
 > * Currently STU have the seperate help contents for the plugin.
 > * We have a plan to show this README.md help contents for plugin in the near future.
+
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)

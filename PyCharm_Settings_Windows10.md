@@ -1,3 +1,5 @@
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
 # PyCharm Settings
 
 When you open a folder at PyCharm it create an folder named `.idea`. And all dependent settings and environments and status are saved in this `.idea` folder.
@@ -30,3 +32,4 @@ Sometimes program code do not follow correct english. To get rid of `Typo` warni
 
 > You can easily seach the item at left top text input control.
 
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)

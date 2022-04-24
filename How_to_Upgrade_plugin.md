@@ -1,23 +1,25 @@
-# How to upgrade plugin
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
+
+# How to upgrade plugin (how to delete (end of life) your plugin)
 
 There are many reasons to upgrade plugin:
-* `Bug`: Mal-functional operation
-* `Obsolete dependent module`: Not operation for out of date dependent module
-* `Need more function`: Add/Modify input parameters and functions
-* and more than tens of hundreds reason to upgrade plugin
+* `Bug fix`: Mal-functional operation
+* `Obsolete dependent module(s)`: Not operation for out of date dependent module
+* `Need more function or enhancement`: Add/Modify input parameters and functions
+* and many more reasons to upgrade plugin
 
-Next method is not for the every case but usually we follow next process.
+This section will explain one exampole of the plugin update procedure. Maybe this is not for all of the cases but usually we follow next process.
 
-## Find the problem
+## Finding (isolating) the problem
 
-When some abnomal situation happen Finding the exact problem is the most important thing.
+When some abnormal situation happens finding the exact problem clearly is the most important thing.
 
-### Reproduce the problem
+### Reproducing the problem
 
-Most of error reports came from others which use your plugin. 
-In this case first thing is to reproduce that problem. 
-When you try to reproduce you have to know or gather at least as much as possible:
-* OS Release: Windows 10 SP 2 (build xxxxx)
+Most of error reports come from various users who use your plugin who runs it in various environment.
+In this case first thing to do is to reproduce that problem at your environment. 
+When you try to reproduce the problem, you have to know or gather as much information as possible:
+* OS version and release: Windows 10 SP 2 (build xxxxx)
 * Main Language: English, Korean, Japnanese, Chinese and so on
 * Environmental Variables: %UserProfile%, %Temp%, ...
 * ...
@@ -30,7 +32,7 @@ However sometimes you have to maintain the code by others.
 In this case the first thing is that run the `tests\test_me.py` unittest code.
 Usually these test cases contains all good and bad functionalities you can see the intention of the original code.
 
-## Coding
+## Coding to fix the bug
 
 You can modity the main `__init__.py` file.
 
@@ -61,11 +63,11 @@ Usually even the new added case is passed some of the rest cases would not be pa
 We call this `regression testing`.
 So let's create test cases not just success but also failure.
 
-## Config `setup.yaml`
+## Rewrite `setup.yaml` for version control
 
 You have to do `version up` at `setup.yaml` file.
 
-## Building
+## Building the updated plugin
 
 Building process is the same with the command `build.bat`.
 
@@ -76,3 +78,15 @@ If you have reproduced failure bot case you have to test that bot is working wel
 ![01-plugin-version-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/11-upgrade-plugin/01-plugin-version-STU.png)
 
 Once you update your plugin you can see the versions at STU like above image. You can upgrade target version and `test run` the bot.
+
+# How to delete (EOL) your plugin
+
+ARGOS Low-code platform has a mechanism to collect usage data of all plugins. When your plugin (or a certain version of your plugin) has no usage record in the last 180 days, you can delete your plugin by following the procedure below.
+
+1. Send a request for removal email to plugin_management@argos-labs.com
+2. Receive usage stats and approval/disapproval for deletion
+3. If approved, confirm removal by another email.
+4. Your plugin (or a certain version(s) of the pluign) will be removed from service.
+
+
+<<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
