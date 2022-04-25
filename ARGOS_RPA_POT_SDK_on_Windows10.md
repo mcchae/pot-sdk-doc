@@ -1,5 +1,6 @@
 ![top-header](Captures/top-header.png)
 
+
 # The 5 templates and 3 utilities
 > What you need: Python 3.7 and PyCharm
 
@@ -14,6 +15,11 @@
 ***7.*** | ![top-01-07](Captures/top-01-07.png) | ***Utility 1: alabs.icon → design the plugin icon from any graphics***
 ***8.*** | ![top-01-08](Captures/top-01-08.png) | ***Utility 2: build.bat → prepare upload-able package (.whl)***
 ***9.*** | ![top-01-09](Captures/top-01-09.png) | ***Utility 3: Preconfigured Test Repository***
+
+
+![top-header](Captures/top-header.png)
+
+
 
 # 13 useful rules to keep in mind
 > to avoid errors that we see frequently
@@ -38,7 +44,14 @@
 13. ***Design with good exception handling and Return Code. The Return Code can be handled at STU.***
 
 
+
+
 ---
+
+![top-header](Captures/top-header.png)
+
+
+
 
 # ARGOS-Labs POT SDK on Windows 10
 
