@@ -1,3 +1,40 @@
+# The 5 templates and 3 utilities
+> What you need: Python 3.7 and PyCharm
+
+|Index | Icon | Items |
+|:---:|---|---|
+***1.*** | ![top-01-01](Captures/top-01-01.png) | ***Your Python program (sample API code, OSS, or your original Python code)***
+***2.*** | ![top-01-02](Captures/top-01-02.png) | ***Template 1: requirements.txt → define referenced resources***
+***3.*** | ![top-01-03](Captures/top-01-03.png) | ***Template 2: at __init__.py → design your parameter input***
+***4.*** | ![top-01-04](Captures/top-01-04.png) | ***Template 3: at __init__.py → design the main program body***
+***5.*** | ![top-01-05](Captures/top-01-05.png) | ***Template 4: test_me.py → run unit test at the Python level***
+***6.*** | ![top-01-06](Captures/top-01-06.png) | ***Template 5: setup.yaml → set attributes for search on STU***
+***7.*** | ![top-01-07](Captures/top-01-07.png) | ***Utility 1: alabs.icon → design the plugin icon from any graphics***
+***8.*** | ![top-01-08](Captures/top-01-08.png) | ***Utility 2: build.bat → prepare upload-able package (.whl)***
+***9.*** | ![top-01-09](Captures/top-01-09.png) | ***Utility 3: Preconfigured Test Repository***
+
+# 13 useful rules to keep in mind
+> to avoid errors that we see frequently
+
+## Related to the Python package name
+1. ***Always start with “argoslabs” like argoslabs.anyname1.anyname2.***
+2. ***Package name must have three levels like argoslabs.anyname1.anyname2.***
+3. ***You can only use lowercase of a ~ z and underscore (_) for the package name.***
+4. ***Package name must be unique (Don’t worry – there is a checking mechanism when packaging).***
+5. ***Display name must be unique (Don’t worry – there is a checking mechanism when packaging).***
+
+## Related to configuring setup.yaml file
+6. ***You must declare platforms like [‘windows’, ‘darwin’, ‘linux’].***
+7. ***Set proper keywords.***
+8. ***Set proper platform.***
+9. ***Set version like 1.2.3.4 (Do not start the section with 0, i.e., 1.505.0935 is not allowed.***
+10. ***Do not forget to enter the proper package name at package_data.***
+
+## Related to plugin coding
+11. ***Design input and output to be user friendly.***
+12. ***Print out to STDOUT with a good result. The Return Value can be used as String, CSV or File at STU.***
+13. ***Design with good exception handling and Return Code. The Return Code can be handled at STU.***
+
 # ARGOS-Labs POT SDK on Windows 10
 
 Welcome to the Python-to-Operation Toolset (POT) SDK for ARGOS Low-code platform. This doucoment will show you how to develop and release a plugin from your Python solution.
