@@ -6,7 +6,7 @@
 
 # ARGOS-Labs POT SDK on Windows 10
 
-Welcome to the Python-to-Operation Toolset (POT) SDK for ARGOS Low-code platform. This doucoment will show you how to develop and release a plugin from your Python solution.
+Welcome to the Python-to-Operation Toolset (POT) SDK for ARGOS Low-code platform. This document will show you how to develop and release a plugin from your Python solution.
 
 ---
 ## Prerequisites
