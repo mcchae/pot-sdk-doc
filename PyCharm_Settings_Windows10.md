@@ -4,7 +4,7 @@
 
 When you open a folder at PyCharm it create an folder named `.idea`. And all dependent settings and environments and status are saved in this `.idea` folder.
 
-Next settings are usaful just after open a new folder to work with PyCharm.
+Next settings are usefull just after open a new folder to work with PyCharm.
 
 ![03-pycharm-settings](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/02-pycharm-settings/03-pycharm-settings.png)
 
