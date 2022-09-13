@@ -111,10 +111,10 @@ wheel               0.37.0
 
 | Item | Minimum version | Role | Description |
 |---|---|---|---|
-| [alabs.common](https://pypi-official.argos-labs.com/#/package/alabs-common) | 3.721.1350 | SDK library | Library for SDK |
+| [alabs.common](https://pypi-official.argos-labs.com/#/package/alabs-common) | 4.323.1107 | SDK library | Library for SDK |
 | [alabs.icon](https://pypi-official.argos-labs.com/#/package/alabs-icon) | 1.711.2351 | icon utility | This utility make plugin icon |
-| [alabs.ppm](https://pypi-official.argos-labs.com/#/package/alabs-ppm) | 4.115.1700 | POT utility | POT main utility |
+| [alabs.ppm](https://pypi-official.argos-labs.com/#/package/alabs-ppm) | 4.628.1925 | POT utility | POT main utility |
 
-> Above versions are for now, date 21 March, 2022
+> Above versions are for now, date 13 September, 2022
 
 <<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
