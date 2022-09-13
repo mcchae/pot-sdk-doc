@@ -81,9 +81,9 @@ You can check the POT SDK related modules with `pip list` command at Virtual Env
 (py37) C:\work>pip list
 Package             Version
 ------------------- ----------
-alabs.common        3.721.1350
+alabs.common        4.323.1107
 alabs.icon          1.711.2351
-alabs.ppm           4.115.1700
+alabs.ppm           4.628.1925
 beautifulsoup4      4.9.3
 certifi             2021.5.30
 chardet             4.0.0
