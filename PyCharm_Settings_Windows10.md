@@ -32,4 +32,12 @@ Sometimes program code do not follow correct english. To get rid of `Typo` warni
 
 > You can easily seach the item at left top text input control.
 
+## Setting for test runner
+Recent PyCharm (Nov 2022) has the setting for test runner as `pytest`. This can cause the testing of the `unittest` for `test_me.py`. 
+
+So need to set:
+
+![08-set-test-runner](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/02-pycharm-settings/08-set-test-runner.png)
+
+
 <<[Go to previous page](ARGOS_RPA_POT_SDK_on_Windows10.md)
