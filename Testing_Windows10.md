@@ -226,6 +226,7 @@ This return code is the same as plugin's return code.
 
 ## Debugging of testing
 ![02-debug-unittest](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
+> If the debug context menu is not `Debug Unittests in test_me...` (like `Debug pytest in test_me...`) then this testing will fail. In this case need to set default `test runner` as `Unittest`. Refer [Setting PyCharm default test runner](https://github.com/Jerry-Chae/pot-sdk-doc/blob/main/PyCharm_Settings_Windows10.md#setting-for-test-runner)
 
 Two kinds of testing is possible:
 * Outside of `TestCase` we can debug whole test cases like above example image.
