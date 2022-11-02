@@ -43,13 +43,15 @@ This guide is based on one of the most popular Python [IDE](https://en.wikipedia
 
 The step by step guide for how to build ARGOS Low-Code Python plugin.
 
-### [Download the plugin template](Download_Template.md)
+### [PyCharm settings](PyCharm_Settings_Windows10.md)
+You must complete the IDE settings after preparation of Template.
 
+### [Download the plugin template](Download_Template.md)
 When starting a new project, you must prepare a base folder from `Template` everytime. Then, you must set configuration for `PyCharm` IDE.
 You can download the `Template` folder in which you will find several files including 
 
-### [PyCharm settings](PyCharm_Settings_Windows10.md)
-You must complete the IDE settings after preparation of Template.
+### [File Structure for the plugin](File_Structure.md)
+This sesction explains the total structure of the plugin.
 
 ---
 ## Coding for plugin
@@ -82,7 +84,7 @@ Each plugin must have a usage help. The README.md contents will be linked the ST
 
 Now that everything is ready. Let's build your plugin.
 
-### [Preparing private repository](Preparing_Private_Repository_Windows10.md)
+### [Preparing private repository](Preparing_Private_Repository_Windows10.md) (One time installation)
 
 After building your plugin, you can upload it to your own Python private repository. This guide shows how to install private repository and configuration at Supervisor.
 
