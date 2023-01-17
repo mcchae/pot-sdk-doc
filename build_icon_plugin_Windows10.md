@@ -6,14 +6,14 @@
 
 This section covers the creation of icon of your plugin that will be the representative entity in STU's toolbox. You can create an icon for this plugin from any image.
 
-![01-search-icons](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/01-search-icons.png)
+![01-search-icons](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/01-search-icons.png)
 
 Icon should be iconic to the functions of your plugin. Let's search `ascii art icon` or `figlet icon` from google image search.
 Any icon candidate is OK.
 
 > Be careful with `Copyright`
 
-![02-build-icon](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/02-build-icon.png)
+![02-build-icon](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/02-build-icon.png)
 
 You can build `icon.png` in `Terminal` with next command.
 ```sh
@@ -41,7 +41,7 @@ You can see the `icon-my.png` image on left pane and result `icon.png` image on 
 
 Finally, it is time to build up your new plugin after coding, testing and making the icon.
 
-![03-build-bat](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/03-build-bat.png)
+![03-build-bat](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/03-build-bat.png)
 
 You can build this plugin by executing `build.bat` on `terminal`.
 
@@ -113,7 +113,7 @@ Here is the explanation of this `build.bat`:
 
 > "`alabs.ppm %VB% submit` " command is commented out because of under preparation. This is a request to publish to [Official Repository](https://pypi-official.argos-labs.com).
 
-![04-userid-password-sv](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/04-userid-password-sv.png)
+![04-userid-password-sv](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/04-userid-password-sv.png)
 
 When running `build.bat` two prompts will appear:
 * `upload command need user id for ARGOS RPA, User ID? ` - Enter ***Supervisor's User ID***
@@ -122,7 +122,7 @@ When running `build.bat` two prompts will appear:
 > If you already have one or more private repositories then re-order and move up your target repository to the first position on Supervisor's Private repository screen. This is because the POT SDK will upload the new plugin to the ***FIRST private repository*** on Supervisor's Private screen.
 
 
-![05-build-success](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/05-build-success.png)
+![05-build-success](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/05-build-success.png)
 
 At the end of `build.bat` running you can see:
 ```text
@@ -134,19 +134,19 @@ All process is done by one command `build.bat`. If you cannot see this result yo
 > * This log file is rotated with 4 more files like  `%UserProfile%\.argos-rap.log.1` ~  `%UserProfile%\.argos-rap.log.4` with size of 500KB.
 > * This is a good free log viewer named [baretail](https://www.baremetalsoft.com/baretail/)
 
-![09-baretail](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/09-baretail.png)
+![09-baretail](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/09-baretail.png)
 
 
 ## Confirming successful upload of the new plugin to private repository
 
-![06-check-upload](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/06-check-upload.png)
+![06-check-upload](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/06-check-upload.png)
 
 You can see the uploaded plugin Python module at your `private repository`. `
-![07-detailed-list](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/07-detailed-list.png)
+![07-detailed-list](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/07-detailed-list.png)
 
 pypicloud` can see the module lists and go into to see more detailed versions.
 
-![08-pypi-simple](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/08-pypi-simple.png)
+![08-pypi-simple](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/08-pypi-simple.png)
 
 Normal `Python private pypi server` is accessced by the following scheme:
 Optional `username` and `password` and host and `/simple`
