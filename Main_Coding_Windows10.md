@@ -138,7 +138,7 @@ def main(*args):
 
 ## ModuleContext at _main function
 
-![01-ModuleContext](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/01-ModuleContext.png)
+![01-ModuleContext](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/01-ModuleContext.png)
 
 Every plugin has the function named `main` and `_main`. At the `_main` you can find `ModuleContext` with construction statement.
 
@@ -187,13 +187,13 @@ Other Values | Misc
 
 > Tney are the categories in STU's toolbox. We welcome any suggestions if you do not find a proper category.
 
-![STU-Operation-Groups](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/STU-Operation-Groups.png)
+![STU-Operation-Groups](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/STU-Operation-Groups.png)
 
 You can see grouped plugin category at STU.
 
 ## Input design for the plugin parameters
 
-![02-Input-Design](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/02-Input-Design.png)
+![02-Input-Design](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/02-Input-Design.png)
 
 Below shows the `Input design` Python code:
 ```python
@@ -383,7 +383,7 @@ The most common thing with `mcxt` is to logging error, info, and so on. `mcxt.lo
 
 ### Retuen Code
 
-![03-Exception-Handling](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/03-Exception-Handling.png)
+![03-Exception-Handling](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/03-Exception-Handling.png)
 
 You can define multiple return code with different execution outcomes as follows:
 
@@ -407,17 +407,17 @@ This scheme is same as normal [exception handling in Python](https://docs.python
 
 > We recommend for the broadest exception, `except Exception as err` return `99` - BUT we know nobody really follows our rules (or even reads this);-)
 
-![04-STU-FailureCodeAction](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/04-STU-FailureCodeAction.png)
+![04-STU-FailureCodeAction](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/04-STU-FailureCodeAction.png)
 
 You can use this return code as `Failure code action` at STU.
 
 ### Return Value - Stdout print
 
-![06-STU-ReturnValue](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/06-STU-ReturnValue.png)
+![06-STU-ReturnValue](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/06-STU-ReturnValue.png)
 
 After run one plugin operation you can get the result at `Return value` section with one of types `String`, `CSV` or `File`.
 
-![05-Stdout](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/05-Stdout.png)
+![05-Stdout](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/05-Stdout.png)
 
 For the `plugin`'s `return value` regardless of those types `String`, `CSV` or `File` you can print out to STDOUT stream.
 
