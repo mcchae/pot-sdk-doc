@@ -225,21 +225,21 @@ This return code is the same as plugin's return code.
 > Naturally, you add a new test case for the new functionality. However, testing for all of the previous test cases must be performed for every update. We call this [Regression testing](https://en.wikipedia.org/wiki/Regression_testing).
 
 ## Debugging of testing
-![02-debug-unittest](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
-> If the debug context menu is not `Debug Unittests in test_me...` (like `Debug pytest in test_me...`) then this testing will fail. In this case need to set default `test runner` as `Unittest`. Refer [Setting PyCharm default test runner](https://github.com/Jerry-Chae/pot-sdk-doc/blob/main/PyCharm_Settings_Windows10.md#setting-for-test-runner)
+![02-debug-unittest](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
+> If the debug context menu is not `Debug Unittests in test_me...` (like `Debug pytest in test_me...`) then this testing will fail. In this case need to set default `test runner` as `Unittest`. Refer [Setting PyCharm default test runner](https://github.com/argos-labs/pot-sdk-doc/blob/main/PyCharm_Settings_Windows10.md#setting-for-test-runner)
 
 Two kinds of testing is possible:
 * Outside of `TestCase` we can debug whole test cases like above example image.
 * When the cursor is in one of the test function and right click and select `Debug` then you can debug only that function.
 
-![03-check-all-passed](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/03-check-all-passed.png)
+![03-check-all-passed](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/03-check-all-passed.png)
 
 When you test all cases you can see the process of passed or not at the left bottom side on `PyCharm` like above capture image.
 
 > You have to make sure every test case is passed. If not, the plugin build-up will fail.
 
 ## How to validate the uniqueness of your package name and the display name
-![04-check-unique-name](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/04-check-unique-name.png)
+![04-check-unique-name](https://raw.githubusercontent.com/argos-labs/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/04-check-unique-name.png)
 
 You can open `Terminal` from the context menu, `Open with > Terminal` on right click of folder `asciiart`.
 And run this command,
