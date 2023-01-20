@@ -55,11 +55,11 @@ class TU(TestCase):
         #     print('Skip testing at test/build time')
         #     return
         try:
-            _ = main('')
-            self.assertTrue(False)
+            r = main('')
+            self.assertTrue(r == 98)
         except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
-            self.assertTrue(True)
+            self.assertTrue(False)
 
     # ==========================================================================
     def test0110_success(self):
